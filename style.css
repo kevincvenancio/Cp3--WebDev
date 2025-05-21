@@ -3,4 +3,10 @@
     align-items: center;
     gap: 8px;
  }
- 
+
+.imagens img {
+  width: 150px;  
+  height: 150px; 
+  object-fit: cover;
+  margin: 5px; 
+}
