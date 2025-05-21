@@ -1,3 +1,6 @@
-#filtrar{
-    position: relative;
-}
+.filtro-categoria{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+ 
