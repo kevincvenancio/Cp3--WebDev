@@ -16,7 +16,7 @@ let listagem_produtos = [//luiz
     const btnFiltrar = document.getElementById("filtrar");
   
     btnTodos.addEventListener("click", mostrarTodos);
-    btnFiltrar.addEventListener("mouseover", filtrarProdutos);
+    btnFiltrar.addEventListener("click", filtrarProdutos);
   }
   
   function mostrarTodos() {
