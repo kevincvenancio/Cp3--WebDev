@@ -39,9 +39,9 @@ let listagem_produtos = [//luiz
   
       // para ver disponibilidade
       let produto = null;
-      for (let j = 0; j < listagem_produtos.length; j++) {
-        if (listagem_produtos[j].nome === img.alt) {
-          produto = listagem_produtos[j];
+      for (let i = 0; i < listagem_produtos.length; i++) {
+        if (listagem_produtos[i].nome === img.alt) {
+          produto = listagem_produtos[i];
           break;
         }
       }
