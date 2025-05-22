@@ -1,4 +1,4 @@
-let listagem_produtos = [//l
+let listagem_produtos = [//luiz
     {nome:"Celular", preco:1500, categoria:"Eletronicos", disponibilidade: true},
     {nome:"Notebook", preco:2000, categoria:"Eletronicos", disponibilidade: false},
     {nome:"Relogio", preco:500, categoria:"Eletronicos", disponibilidade: true},
@@ -8,7 +8,7 @@ let listagem_produtos = [//l
     {nome:"Livro1", preco:200, categoria:"Livros", disponibilidade: false},
     {nome:"Livro2", preco:500, categoria:"Livros", disponibilidade: true},
     {nome:"Livro3", preco:150, categoria:"Livros", disponibilidade: true},
-    {nome:"Livro4", preco:250, categoria:"Livros", disponibilidade: false},
+    {nome:"Livro4", preco:250, categoria:"Livros", disponibilidade:  false},
   ];
   
   window.onload = function() {
