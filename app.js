@@ -1,4 +1,4 @@
-let listagem_produtos = [
+let listagem_produtos = [//l
     {nome:"Celular", preco:1500, categoria:"Eletronicos", disponibilidade: true},
     {nome:"Notebook", preco:2000, categoria:"Eletronicos", disponibilidade: false},
     {nome:"Relogio", preco:500, categoria:"Eletronicos", disponibilidade: true},
@@ -16,20 +16,20 @@ let listagem_produtos = [
     const btnFiltrar = document.getElementById("filtrar");
   
     btnTodos.addEventListener("click", mostrarTodos);
-    btnFiltrar.addEventListener("click", filtrarProdutos);
+    btnFiltrar.addEventListener("mouseover", filtrarProdutos);
   }
   
   function mostrarTodos() {
     const imagens = document.querySelectorAll(".imagens img");
     for (let i = 0; i < imagens.length; i++) {
-      imagens[i].style.display = "inline"; // mostra todas as imagens
+      imagens[i].style.display = "inline"; 
     }
   
-    document.getElementById("texto").innerText = "Todos os produtos:";
+    document.getElementById("texto").innerText = "Todos os produtos:";// mudar o texto:kevin
   }
   
   function filtrarProdutos() {
-    const categoria = document.getElementById("categorias").value;
+    const categoria = document.getElementById("categorias").value;//pegar as categorias:luiz
     const checkbox = document.getElementById("checkbox").checked;
     const imagens = document.querySelectorAll(".imagens img");
   
@@ -37,7 +37,7 @@ let listagem_produtos = [
       let img = imagens[i];
       const imgCategoria = img.className;
   
-      // para ver disponibilidade, procura o produto pelo nome (alt)
+      // para ver disponibilidade
       let produto = null;
       for (let j = 0; j < listagem_produtos.length; j++) {
         if (listagem_produtos[j].nome === img.alt) {
@@ -46,7 +46,7 @@ let listagem_produtos = [
         }
       }
   
-      // decide se mostra ou não a imagem
+      // se a imagem vai mostar
       const mostrar =
         (categoria === imgCategoria) &&
         (!checkbox || (checkbox && produto && produto.disponibilidade));
@@ -54,6 +54,6 @@ let listagem_produtos = [
       img.style.display = mostrar ? "inline" : "none";
     }
   
-    document.getElementById("texto").innerText = "Produtos da categoria: " + categoria;
+    document.getElementById("texto").innerText = "Produtos da categoria: " + categoria;//texto mais a categoria:luiz
   }
   
