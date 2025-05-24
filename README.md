@@ -32,19 +32,6 @@ Este projeto consiste em um catálogo interativo de produtos, desenvolvido como 
 
 ---
 
-## 📂 Estrutura do Projeto
-
-
-/projeto-catalogo
-│
-├── index.html         # Estrutura da página
-├── style.css          # Estilos visuais
-├── app.js             # Lógica e interações
-├── /imagens           # Imagens dos produtos
-
-
----
-
 ## ▶️ Como Rodar o Projeto
 
 1. Faça o download ou clone este repositório:
